@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+torch
+pytorch-forecasting
+lightning
+stable-baselines3
+gymnasium
+streamlit
+plotly
