@@ -1,7 +1,6 @@
 # 🩸 AI-Driven Blood Inventory Optimization Using TFT and PPO
 
 ## 📌 Project Overview
-
 Blood banks need to maintain sufficient blood inventory to meet patient
 demand while minimizing shortages and unnecessary excess stock.
 
@@ -14,7 +13,6 @@ The system forecasts future blood demand for different blood groups and
 uses reinforcement learning to determine the recommended quantity of
 blood units to order while considering inventory levels, demand,
 shortage costs, and excess inventory.
-
 ---
 
 ## 🎯 Objectives
