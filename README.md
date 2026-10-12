@@ -14,7 +14,6 @@ uses reinforcement learning to determine the recommended quantity of
 blood units to order while considering inventory levels, demand,
 shortage costs, and excess inventory.
 ---
-
 ## 🎯 Objectives
 
 - Forecast blood demand for different blood groups.
