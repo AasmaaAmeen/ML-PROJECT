@@ -1,0 +1,43 @@
+RUN FROM THE PROJECT ROOT:
+
+1. Put the four supplied CSV files inside data\:
+   blood_donation.csv
+   number of blood bags.csv
+   BloodDonorsAndBloodDonationsAnnual.csv
+   combined_blood_inventory_dashboard.csv
+
+2. Install:
+   pip install -r requirements.txt
+
+3. Preprocess:
+   python -m data.preprocess_ml
+
+4. Train TFT:
+   python -m forecasting.train_tft
+
+5. Generate TFT forecasts:
+   python -m forecasting.forecast
+
+6. Train PPO:
+   python -m rl.train_ppo
+
+7. Generate PPO recommendations:
+   python -m rl.generate_results
+
+8. Evaluate PPO:
+   python -m rl.evaluate_ppo
+
+MAIN OUTPUTS:
+data\blood_timeseries.csv
+data\blood_bags_long.csv
+data\tft_forecast.csv
+data\ppo_inventory_results.csv
+data\ppo_evaluation.csv
+
+IMPORTANT:
+The donor dataset is used to create a monthly blood-donation activity time series.
+This is a supply/donation proxy, not a direct hospital-demand measurement.
+The "number of blood bags" dataset is retained as a supplementary inventory dataset.
+For a final research claim about hospital demand, replace the forecasting target with a
+true demand/transfusion/issue dataset when available.
+\n9. Launch dashboard:\n   python -m streamlit run dashboard\\app.py\n

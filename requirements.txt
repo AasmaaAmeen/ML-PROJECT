@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+torch
+torchmetrics
+lightning
+pytorch-forecasting
+gymnasium
+stable-baselines3
+shimmy
+streamlit
+plotly
+openpyxl
